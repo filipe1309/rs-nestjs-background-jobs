@@ -1,5 +1,11 @@
 import { MailerService } from '@nestjs-modules/mailer';
-import { Process, Processor } from '@nestjs/bull';
+import {
+  OnQueueActive,
+  OnQueueCompleted,
+  OnQueueProgress,
+  Process,
+  Processor,
+} from '@nestjs/bull';
 import { Job } from 'bull';
 import { CreateUserDTO } from 'src/create-user/create-user-dto';
 
@@ -17,6 +23,21 @@ class SendMailConsumer {
       subject: 'Welcome to DOTR Async',
       text: `Hello ${data.name}, your account has been created. Welcome!`,
     });
+  }
+
+  @OnQueueCompleted()
+  onQueueCompleted(job: Job<CreateUserDTO>) {
+    console.log(`On Completed: ${job.name}`);
+  }
+
+  @OnQueueProgress()
+  onQueueProgress(job: Job<CreateUserDTO>) {
+    console.log(`On Progress: ${job.name}`);
+  }
+
+  @OnQueueActive()
+  onQueueActive(job: Job<CreateUserDTO>) {
+    console.log(`On Active: ${job.name}`);
   }
 }
 
