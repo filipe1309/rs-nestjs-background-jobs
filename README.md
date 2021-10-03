@@ -14,6 +14,7 @@ This project was developed following Rocketseat's "[Background Jobs com NestJS -
 
 - [Node.js](https://nodejs.org/en/)
 - [NestJS](https://nestjs.com/)
+- [Bull](https://github.com/OptimalBits/bull)
 - [Ethereal](https://ethereal.email/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
@@ -45,7 +46,7 @@ docker-compose up
 
 ## Examples
 
-see `api.http`
+see `api.http` file.
 
 <!-- ## :white_check_mark: Tests
 
