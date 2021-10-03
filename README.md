@@ -3,9 +3,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/Code-NestJS-informational?style=flat-square&logo=nestjs&color=E0234E&logoColor=E0234E" alt="NestJS" />
     <img src="https://img.shields.io/badge/Code-NodeJS-informational?style=flat-square&logo=node.js&color=339933" alt="NodeJS" />
-    <img src="https://img.shields.io/badge/Tools-MongoDB-informational?style=flat-square&logo=mongodb&color=47A248&logoColor=47A248" alt="MongoDB" />
     <img src="https://img.shields.io/badge/Tools-Docker-informational?style=flat-square&logo=docker&color=2496ED" alt="Docker" />
-    <img src="https://img.shields.io/badge/Tools-Heroku-informational?style=flat-square&logo=heroku&color=430098&logoColor=430098" " alt="Heroku" />
 </p>
 
 ## 💬 About
