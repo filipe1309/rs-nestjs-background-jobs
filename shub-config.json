@@ -1,0 +1,14 @@
+{
+    "version": "0.21.2",
+    "username": "Filipe Leuch Bonfim",
+    "github_username": "filipe1309",
+    "project_name": "Background Jobs with NestJS",
+    "project_repo_name": "rs-nestjs-background-jobs",
+    "project_repo_link": "https://github.com/filipe1309/rs-nestjs-background-jobs.git",
+    "course_source": "Rocketseat",
+    "course_name": "Background Jobs com NestJS - Code/drops #75",
+    "course_link": "https://www.youtube.com/watch?v=cpLBaVBMg2Y&t=522s&ab_channel=Rocketseat",
+    "course_type": "video",
+    "course_multiple": "false",
+    "vcs": "false"
+}
