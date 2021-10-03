@@ -41,6 +41,12 @@ docker-compose up
 
 > Access http://localhost:3000
 
+> Queues Dashboard http://localhost:3000/admin/queues
+
+## Examples
+
+see `api.http`
+
 <!-- ## :white_check_mark: Tests
 
 After up the container:

@@ -26,3 +26,9 @@ https://ethereal.email/
 ```sh
 yarn add @nestjs/config
 ```
+
+https://github.com/felixmosh/bull-board
+
+```sh
+yarn add bull-board
+```
