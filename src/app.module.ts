@@ -3,6 +3,8 @@ import { BullModule } from '@nestjs/bull';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { CreateUserController } from './create-user/create-user.controller';
+import { SendMailConsumer } from './jobs/sendMail-consumer';
+import { SendMailProducerService } from './jobs/sendMail-producer-service';
 
 @Module({
   imports: [
@@ -23,8 +25,11 @@ import { CreateUserController } from './create-user/create-user.controller';
         },
       },
     }),
+    BullModule.registerQueue({
+      name: 'sendMail-queue',
+    }),
   ],
   controllers: [CreateUserController],
-  providers: [],
+  providers: [SendMailProducerService, SendMailConsumer],
 })
 export class AppModule {}

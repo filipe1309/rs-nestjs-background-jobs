@@ -1,18 +1,14 @@
-import { MailerService } from '@nestjs-modules/mailer';
 import { Body, Controller, Post } from '@nestjs/common';
+import { SendMailProducerService } from 'src/jobs/sendMail-producer-service';
 import { CreateUserDTO } from './create-user-dto';
 
 @Controller('create-user')
 export class CreateUserController {
-  constructor(private mailService: MailerService) {}
+  constructor(private sendMailService: SendMailProducerService) {}
 
   @Post('/')
   async createUser(@Body() createUserDto: CreateUserDTO) {
-    this.mailService.sendMail({
-      to: createUserDto.email,
-      from: 'DOTR <dotr@br.com>',
-      subject: 'Welcome to DOTR',
-      text: `Hello ${createUserDto.name}, your accout has been created. Welcome!`, 
-    });
+    this.sendMailService.sendMail(createUserDto);
+    return createUserDto;
   }
 }
