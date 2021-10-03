@@ -14,6 +14,7 @@ This project was developed following Rocketseat's "[Background Jobs com NestJS -
 
 - [Node.js](https://nodejs.org/en/)
 - [NestJS](https://nestjs.com/)
+- [Ethereal](https://ethereal.email/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
